@@ -376,6 +376,8 @@ if (localStorage.getItem('selectedSkin')) {
 	console.log('ниче не сохранилось')
 	localStorage.setItem('selectedSkin', selectedSkin)
 	selectedSkin = 0
+	DOMgameMenuSkinAnswers[selectedSkin].classList.remove('release')
+   	DOMgameMenuSkinAnswers[selectedSkin].classList.add('select')
 }
 
 DOMgameMain.style.backgroundImage = `url(img/skins/${selectedSkin}/0.webp)`
